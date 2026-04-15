@@ -4,11 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabarito - Alinhamento em Tabelas</title>
+<style>
+body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            /* Alinhamento padrão */
+            text-align: center;      
+            vertical-align: middle;  
+        }
+        .texto-direita {
+            text-align: right;
+        }
+
+        .texto-esquerda {
+            text-align: left;
+        }
+        .topo{
+            vertical-align: top;
+}
+        .baixo{
+            vertical-align: bottom
+}
+        .alinhamento{
+                  height: 70px;
+}
+
+
+</style>
    
 </head>
 <body>
     <h1>Gabarito - Trabalhando com alinhamento</h1>
     
-  
+   <table>
+        <tr class="alinhamento"> <!-- Primeira linha -->
+            <td class="texto-esquerda">A1</td>
+            <td>B1</td>
+            <td class="texto-direita">C1</td>
+        </tr>
+        <tr> <!-- Segunda linha -->
+            <td class="topo">A2</td>
+            <td>B2</td>
+            <td class="baixo">C2</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td class="topo">A3</td>
+            <td class="baixo">B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="alinhamento"> <!-- Quarta linha -->
+            <td>A4</td>
+            <td class="texto-direita">1000</td>
+            <td>C4</td>
+        </tr>
+    </table>
+
 </body>
 </html>
